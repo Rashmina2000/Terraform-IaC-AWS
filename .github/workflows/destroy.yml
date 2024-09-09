@@ -32,4 +32,4 @@ jobs:
         run: terraform init
 
       - name: Terraform Destroy
-        run: terraform destroy -auto-approve
+        run: terraform destroy -var db_pass=${{ secrets.DB_PASS }} -var db_user=${{ secrets.DB_USER }} -auto-approve
