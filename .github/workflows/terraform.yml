@@ -9,6 +9,7 @@ on:
 env:
   TF_CLOUD_ORGANIZATION: "Terrarush-Testing"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
+  TF_WORKSPACE: "Terraform-IaC-AWS"
 
 jobs:
   terraform:
