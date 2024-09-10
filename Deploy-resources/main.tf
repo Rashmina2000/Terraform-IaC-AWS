@@ -6,11 +6,11 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "rashmina-terraform-state"
-    key = "state/terraform.tfstate"
+    bucket = "rashmina-terraform-state" # Replace with your bucket name
+    key    = "state/terraform.tfstate"
     region = "us-east-1"
   }
 }
 provider "aws" {
-  region     = "us-east-1"
+  region = "us-east-1"
 }

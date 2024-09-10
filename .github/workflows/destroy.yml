@@ -1,10 +1,10 @@
-name: "Terraform Destroy"
+name: "Terraform Destroy from AWS"
 on:
   workflow_dispatch:
 
 jobs:
   terraform-destroy:
-    name: destroy
+    name: "Terraform-Destroy-Job"
     runs-on: ubuntu-latest
 
     env:
